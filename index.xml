@@ -7,7 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>陈亦秦-chenyiqin</copyright>
-        <lastBuildDate>Mon, 30 Mar 2026 03:18:25 +0800</lastBuildDate><atom:link href="https://ckz282.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Apr 2026 21:45:43 +0800</lastBuildDate><atom:link href="https://ckz282.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Inedx</title>
+        <link>https://ckz282.github.io/p/inedx/</link>
+        <pubDate>Sun, 12 Apr 2026 21:45:43 +0800</pubDate>
+        
+        <guid>https://ckz282.github.io/p/inedx/</guid>
+        <description>&lt;img src="https://ckz282.github.io/p/inedx/%E7%86%8A%E5%9B%A21.jpg" alt="Featured image of post Inedx" /&gt;&lt;p&gt;程序的语言特征&lt;/p&gt;
+&lt;p&gt;编译型： 1.直接将写好的代码编译成机器语言，可以被机器直接读写(因此有适配系统的限制)&lt;/p&gt;
+&lt;p&gt;​		2.只要对代码进行修改就要全部重新编译&lt;/p&gt;
+&lt;p&gt;解释型： 1.将写好的代码编译成中间语言，再经由不同设备上的解释器/JVM进一步做到“一次编写，到处运行”&lt;/p&gt;
+&lt;p&gt;​		2.Java：&lt;code&gt;javac&lt;/code&gt; 编译极快，只是转字节码，没有复杂链接优化；&lt;/p&gt;
+&lt;p&gt;​                   Python/JS：无需提前编译，改完直接运行。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>毕业论文的进度记录</title>
         <link>https://ckz282.github.io/p/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%E7%9A%84%E8%BF%9B%E5%BA%A6%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Mon, 30 Mar 2026 03:18:25 +0800</pubDate>
