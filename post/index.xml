@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>陈亦秦-chenyiqin</copyright>
-        <lastBuildDate>Sun, 12 Apr 2026 21:45:43 +0800</lastBuildDate><atom:link href="https://ckz282.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 02 May 2026 17:42:22 +0800</lastBuildDate><atom:link href="https://ckz282.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Javaweb</title>
+        <link>https://ckz282.github.io/p/javaweb/</link>
+        <pubDate>Sat, 02 May 2026 17:42:22 +0800</pubDate>
+        
+        <guid>https://ckz282.github.io/p/javaweb/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>JAVA二周目学习</title>
         <link>https://ckz282.github.io/p/java%E4%BA%8C%E5%91%A8%E7%9B%AE%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Sun, 12 Apr 2026 21:45:43 +0800</pubDate>
@@ -75,6 +83,42 @@
 &lt;p&gt;3.考虑实现主页右下角的AI-agent以实现人机交互。（考虑增加语义识别功能）&lt;/p&gt;
 &lt;p&gt;​     3.1视频流的分析&lt;/p&gt;
 &lt;p&gt;4.实现上面三点之后可以考虑完善原本项目的功能，包括聊天，专栏，评论等。&lt;/p&gt;
+&lt;p&gt;该问题提问并不成熟，已暂时接档留着后面进一步学习项目时更新&lt;/p&gt;
+&lt;p&gt;————————————————————————————————————————————————————————————&lt;/p&gt;
+&lt;p&gt;毕业答辩可能存在的一些问题&lt;/p&gt;
+&lt;p&gt;选题:&lt;/p&gt;
+&lt;p&gt;1.为什么选这个课题:&lt;/p&gt;
+&lt;p&gt;选择这个课题主要有三方面原因：&lt;/p&gt;
+&lt;p&gt;第一，从行业背景来看 ，随着互联网基础设施的完善和 5G 技术的普及，视频已成为信息传播的主要载体。以 Bilibili 为代表的弹幕视频网站月活用户已突破 3 亿，这类平台的背后涉及 海量数据存储、高并发访问、实时通信、搜索引擎、推荐算法 等一系列技术挑战，是一个非常理想的综合性实践课题。&lt;/p&gt;
+&lt;p&gt;第二，从技术学习的角度 ，传统的课程作业往往只涉及增删改查，而这个项目涵盖了前后端分离架构、全文检索（ElasticSearch）、实时弹幕（WebSocket/Netty）、即时通讯（Netty）、智能标签生成（AI大模型）、视频特征提取与向量搜索等 企业级技术栈 ，能够让我将大学四年所学的知识融会贯通。&lt;/p&gt;
+&lt;p&gt;第三，从实用价值来看 ，视频分享平台是当今互联网的核心应用形态，掌握其开发方法对于未来从事后端开发、全栈开发均有直接的帮助。同时，本项目还引入了 AI 大模型 进行视频内容理解和智能标签生成，体现了 传统 Web 开发与人工智能技术融合 的前沿趋势。&lt;/p&gt;
+&lt;p&gt;2.创新点是什么:&lt;/p&gt;
+&lt;p&gt;① 基于 AI 大模型的智能标签生成系统 传统视频平台的标签通常由用户手动添加或简单分词提取。本项目利用 Ollama 本地部署的大语言模型 ，能够自动分析视频标题、描述，并提取视频关键帧进行视觉内容理解，自动生成贴合视频内容的标签， 大幅提升了标签的准确性和丰富度 ，同时降低用户投稿门槛。&lt;/p&gt;
+&lt;p&gt;② 视频特征提取与以图搜视频功能 利用 FFmpegFrameGrabber（javacv） 从视频中提取关键帧，通过 帧差异算法筛选最优帧 ，再调用大模型的 embedding API 生成特征向量 存入 ElasticSearch。用户上传一张图片即可通过 余弦相似度向量搜索 找到内容相关的视频，实现&amp;quot;以图搜视频&amp;quot;功能。&lt;/p&gt;
+&lt;p&gt;③ 多层次的个性化推荐系统 实现了 基于标签相似度（60%）、协同过滤（25%）、探索性推荐（15%） 的三层推荐架构。用户画像根据 观看、点赞、收藏、投币、评论 五种行为动态计算标签权重，并利用 Redis 缓存用户画像 ，实现冷启动→个性化推荐的平滑过渡。&lt;/p&gt;
+&lt;p&gt;3.与现有的系统相比有什么优点&lt;/p&gt;
+&lt;p&gt;与现有的视频平台（如 B站、YouTube）相比，本系统的优点体现在：&lt;/p&gt;
+&lt;p&gt;① 轻量级部署，低成本运行 B站等商业平台的背后是庞大的服务器集群和微服务架构。本项目采用 单体架构 + 模块化设计 ，仅需一台普通服务器即可完整运行，适合 个人站长、小团队、高校实验室 等场景。关键中间件（MySQL + Redis + ES）均为开源软件，AI能力通过本地部署的 Ollama 开源大模型 实现， 无需支付 API 调用费用，数据不出网，隐私安全性更高 。&lt;/p&gt;
+&lt;p&gt;② 全链路自主可控 相比依赖第三方平台，本系统从 视频上传 → AI智能审核 → 智能标签生成 → 特征向量提取 → 搜索引擎索引 → 个性化推荐 → 用户交互（弹幕/评论/私信） 形成了完整的闭环。每一环节的算法和逻辑都掌握在自己手中，可以根据业务需求灵活定制。&lt;/p&gt;
+&lt;p&gt;③ 智能化程度更高 大多数传统视频网站仅使用关键词匹配进行搜索和推荐。本系统引入了 AI 视觉理解 和 向量语义搜索 ，即使视频标题不包含搜索词，只要内容语义相关也能被检索到， 搜索和推荐的精准度显著提升 。&lt;/p&gt;
+&lt;p&gt;4.你对这个系统有什么评价&lt;/p&gt;
+&lt;p&gt;功能完整性 ：基本覆盖了视频分享平台的核心功能链路——用户注册登录 → 视频投稿 → AI 辅助标签生成 → 视频审核发布 → 多维度搜索（ES全文检索+向量语义搜索）→ 个性化推荐 → 弹幕/评论/点赞/投币/收藏 → 实时私信聊天。 从前端交互到后端服务再到数据存储，形成一个完整的业务闭环 。&lt;/p&gt;
+&lt;p&gt;推荐算法仍较简单（基于标签+协同过滤单体架构难以支撑大规模并发 可逐步演进为微服务架构（Spring Cloud） 视频数据仅通过阿里云 OSS 存储 可扩展支持本地存储 + 多 CDN 分发 前端功能（视频分区、用户动态、数据统计等）待完善 继续开发暂停中的模块 智能标签没有人工校正机制 增加标签反馈闭环（用户确认/修正）&lt;/p&gt;
+&lt;p&gt;数据库：&lt;/p&gt;
+&lt;p&gt;1.某个数据库表是怎么设计的，并结合相关功能进行介绍&lt;/p&gt;
+&lt;p&gt;2.系统是否有主外键并进行介绍&lt;/p&gt;
+&lt;p&gt;3.数据库依据的原理是什么&lt;/p&gt;
+&lt;p&gt;4.范式理论&lt;/p&gt;
+&lt;p&gt;程序方面：&lt;/p&gt;
+&lt;p&gt;1.介绍某个功能是怎样设计的&lt;/p&gt;
+&lt;p&gt;2.某个技术是怎样使用的&lt;/p&gt;
+&lt;p&gt;3.创新点是怎么实现的&lt;/p&gt;
+&lt;p&gt;4.系统缺陷是什么，如果改进，如何实现&lt;/p&gt;
+&lt;p&gt;5.解释某行代码，现场修改功能&lt;/p&gt;
+&lt;p&gt;论文：&lt;/p&gt;
+&lt;p&gt;1.格式问题&lt;/p&gt;
+&lt;p&gt;2.某个流程图的具体设计&lt;/p&gt;
+&lt;p&gt;3.数据库ER图的实体关系并结合数据库或程序介绍&lt;/p&gt;
 </description>
         </item>
         <item>
