@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="OK，开个JAVAWEB的新坑">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="OK，开个JAVAWEB的新坑 1.概念： 在JAVA中，动态Web资源开发的技术统称为JavaWeb。 静态资源请求流程： 静态页面存在的缺点： \u200b">
 <title>Javaweb</title>
 
 <link rel='canonical' href='https://ckz282.github.io/p/javaweb/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Javaweb">
-<meta property='og:description' content="OK，开个JAVAWEB的新坑">
+<meta property='og:description' content="OK，开个JAVAWEB的新坑 1.概念： 在JAVA中，动态Web资源开发的技术统称为JavaWeb。 静态资源请求流程： 静态页面存在的缺点： \u200b">
 <meta property='og:url' content='https://ckz282.github.io/p/javaweb/'>
 <meta property='og:site_name' content='陈亦秦的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-05-02T17:42:22&#43;08:00'/><meta property='article:modified_time' content='2026-05-02T17:42:22&#43;08:00'/><meta property='og:image' content='https://ckz282.github.io/p/javaweb/arknights-7th-anniversity.png' />
 <meta name="twitter:title" content="Javaweb">
-<meta name="twitter:description" content="OK，开个JAVAWEB的新坑"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="OK，开个JAVAWEB的新坑 1.概念： 在JAVA中，动态Web资源开发的技术统称为JavaWeb。 静态资源请求流程： 静态页面存在的缺点： \u200b"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ckz282.github.io/p/javaweb/arknights-7th-anniversity.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -263,7 +263,67 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1概念">1.概念：</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#静态资源请求流程">静态资源请求流程：</a></li>
+            <li><a href="#动态资源请求流程">动态资源请求流程：</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#2web服务器">2.WEB服务器：</a>
+      <ol>
+        <li>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#3tomcat">3.Tomcat</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#网站访问流程-">网站访问流程 ：</a></li>
+            <li><a href="#发布一个网站古早传统流程">发布一个网站：（古早传统流程）</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#4请求行">4.请求行</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -325,6 +385,120 @@
     
     
     <p>OK，开个JAVAWEB的新坑</p>
+<h2 id="1概念">1.概念：
+</h2><p>在JAVA中，动态Web资源开发的技术统称为JavaWeb。</p>
+<h4 id="静态资源请求流程">静态资源请求流程：
+</h4><p><img src="http://img2.nloln.de/file/BQACAgUAAyEGAASLVN5eAAIV0Wn3eIUZL9TBjFVWR5Dzzg1yng7oAAJkIgACKKG5V4WCEBZ1R3m_OwQ.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="javaweb1-1.jpg"
+	
+	
+></p>
+<p>静态页面存在的缺点：</p>
+<p>​	1.Web页面无法更新，所有用户看到的都是同一个页面</p>
+<p>​	2.无法和数据库交互（数据无法持久化、用户无法交互）</p>
+<h4 id="动态资源请求流程">动态资源请求流程：
+</h4><p><img src="/p/javaweb/assets/javaweb1-2%282%29.jpg"
+	width="611"
+	height="401"
+	srcset="/p/javaweb/assets/javaweb1-2%282%29_hu1498435925004639424.jpg 480w, /p/javaweb/assets/javaweb1-2%282%29_hu13778297351199160118.jpg 1024w"
+	loading="lazy"
+	
+		alt="javaweb1-2(2)"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="152"
+		data-flex-basis="365px"
+	
+></p>
+<p>动态页面的缺点：</p>
+<p>​	1.加入服务器的动态Web资源出现了资源，需要重新编写后台程序，重新发布(停机维护等)</p>
+<p>​		   优点:</p>
+<p>​	1.Web页面可以动态更新，用户看到的都不是一个页面。</p>
+<p>​	2.可以与数据库交互（数据可以持久化）</p>
+<h2 id="2web服务器">2.WEB服务器：
+</h2><p>服务器是一种被动的操作，用来处理用户的一些请求和给用户一些响应信息：</p>
+<h5 id="iis">IIS：
+</h5><p>微软的；ASP&hellip;.;Windows中自带的</p>
+<h5 id="tomcat">Tomcat:
+</h5><p>免费的开源Web应用服务器，适合中小型系统和并发性不高的场合，是轻量化服务器。</p>
+<p>Tomcat实际上运行JSP和Servlet。</p>
+<p>tips：</p>
+<p>一般软件学习路径:</p>
+<p>​	1.安装 or 解压</p>
+<p>​	2.了解配置文件以及目录结构</p>
+<p>​	3.了解下载软件的作用</p>
+<h2 id="3tomcat">3.Tomcat
+</h2><h4 id="网站访问流程-">网站访问流程 ：
+</h4><p>​	1.先查本机内存中的DNS缓存，命中则访问，否则进行步骤2</p>
+<p>​	2.访问路径为C:\Windows\System32\drivers\etc\hosts的本地文件，命中则访问</p>
+<p>​	并将该地址写入DNS缓存中，否则进行步骤3</p>
+<p>​	3.访问外地的DNS服务器，找到则根据域名获取资源加载网页，找不到返回失败</p>
+<p><img src="/p/javaweb/assets/javaweb1-3.jpg"
+	width="576"
+	height="331"
+	srcset="/p/javaweb/assets/javaweb1-3_hu11659237641137004884.jpg 480w, /p/javaweb/assets/javaweb1-3_hu6703916166917302113.jpg 1024w"
+	loading="lazy"
+	
+		alt="javaweb1-3"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="417px"
+	
+></p>
+<p>​                                                                                                          （文件javaweb1.3）</p>
+<h4 id="发布一个网站古早传统流程">发布一个网站：（古早传统流程）
+</h4><p>​	将写好的网站放入WEB应用服务器（这里指Tomcat）里的webapps文件夹下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">--webapps :Tomcat服务器的应用目录
+</span></span><span class="line"><span class="cl">	-ROOT
+</span></span><span class="line"><span class="cl">	-xxxxx            //网站的目录名
+</span></span><span class="line"><span class="cl">		-WEB-INF
+</span></span><span class="line"><span class="cl">			-classes:java   //程序
+</span></span><span class="line"><span class="cl">			-libs:web   //应用所依赖的jar包
+</span></span><span class="line"><span class="cl">			-web.xml   //网站配置文件
+</span></span><span class="line"><span class="cl">		-index.html   //默认的首页
+</span></span><span class="line"><span class="cl">		-static     //静态资源文件，包括css样式
+</span></span><span class="line"><span class="cl">			-css
+</span></span><span class="line"><span class="cl">			-js
+</span></span><span class="line"><span class="cl">			-img
+</span></span><span class="line"><span class="cl">		-......
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>————————————————————————————————————————————————————————————</p>
+<h2 id="4请求行">4.请求行
+</h2><p>-请求行中的请求方式:GET</p>
+<p>-请求方式:Get,Post,Delete,Put&hellip;&hellip;</p>
+<p>​	get:请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效</p>
+<p>​	post:请求能够携带的参数没有限制，大小没有限制，不会在浏览器的地址栏显示数据内容，安全，但不高效</p>
+<p>响应状态码：</p>
+<p>​	200：请求响应成功</p>
+<p>​	3xx：请求重定向（重新定位到新的网页）</p>
+<p>​	4xx：找不到资源 404</p>
+<p>​	5xx：服务器代码错误 500        502（网关错误）</p>
 
 </section>
 

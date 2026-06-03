@@ -7,13 +7,144 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>陈亦秦-chenyiqin</copyright>
-        <lastBuildDate>Sat, 02 May 2026 17:42:22 +0800</lastBuildDate><atom:link href="https://ckz282.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 03 Jun 2026 19:47:01 +0800</lastBuildDate><atom:link href="https://ckz282.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Pytest</title>
+        <link>https://ckz282.github.io/p/pytest/</link>
+        <pubDate>Wed, 03 Jun 2026 19:47:01 +0800</pubDate>
+        
+        <guid>https://ckz282.github.io/p/pytest/</guid>
+        <description>&lt;img src="https://ckz282.github.io/p/pytest/xiangzi.jpg" alt="Featured image of post Pytest" /&gt;&lt;p&gt;虚无已为真实，吾处其中，亦是真实，是以为本而百无禁忌。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>计算机科学导论-操作系统部分</title>
+        <link>https://ckz282.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E5%88%86/</link>
+        <pubDate>Tue, 19 May 2026 20:36:37 +0800</pubDate>
+        
+        <guid>https://ckz282.github.io/p/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E9%83%A8%E5%88%86/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Javaweb</title>
         <link>https://ckz282.github.io/p/javaweb/</link>
         <pubDate>Sat, 02 May 2026 17:42:22 +0800</pubDate>
         
         <guid>https://ckz282.github.io/p/javaweb/</guid>
         <description>&lt;img src="https://ckz282.github.io/p/javaweb/arknights-7th-anniversity.png" alt="Featured image of post Javaweb" /&gt;&lt;p&gt;OK，开个JAVAWEB的新坑&lt;/p&gt;
+&lt;h2 id=&#34;1概念&#34;&gt;1.概念：
+&lt;/h2&gt;&lt;p&gt;在JAVA中，动态Web资源开发的技术统称为JavaWeb。&lt;/p&gt;
+&lt;h4 id=&#34;静态资源请求流程&#34;&gt;静态资源请求流程：
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://img2.nloln.de/file/BQACAgUAAyEGAASLVN5eAAIV0Wn3eIUZL9TBjFVWR5Dzzg1yng7oAAJkIgACKKG5V4WCEBZ1R3m_OwQ.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;javaweb1-1.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;静态页面存在的缺点：&lt;/p&gt;
+&lt;p&gt;​	1.Web页面无法更新，所有用户看到的都是同一个页面&lt;/p&gt;
+&lt;p&gt;​	2.无法和数据库交互（数据无法持久化、用户无法交互）&lt;/p&gt;
+&lt;h4 id=&#34;动态资源请求流程&#34;&gt;动态资源请求流程：
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://ckz282.github.io/p/javaweb/assets/javaweb1-2%282%29.jpg&#34;
+	width=&#34;611&#34;
+	height=&#34;401&#34;
+	srcset=&#34;https://ckz282.github.io/p/javaweb/assets/javaweb1-2%282%29_hu1498435925004639424.jpg 480w, https://ckz282.github.io/p/javaweb/assets/javaweb1-2%282%29_hu13778297351199160118.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;javaweb1-2(2)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;152&#34;
+		data-flex-basis=&#34;365px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;动态页面的缺点：&lt;/p&gt;
+&lt;p&gt;​	1.加入服务器的动态Web资源出现了资源，需要重新编写后台程序，重新发布(停机维护等)&lt;/p&gt;
+&lt;p&gt;​		   优点:&lt;/p&gt;
+&lt;p&gt;​	1.Web页面可以动态更新，用户看到的都不是一个页面。&lt;/p&gt;
+&lt;p&gt;​	2.可以与数据库交互（数据可以持久化）&lt;/p&gt;
+&lt;h2 id=&#34;2web服务器&#34;&gt;2.WEB服务器：
+&lt;/h2&gt;&lt;p&gt;服务器是一种被动的操作，用来处理用户的一些请求和给用户一些响应信息：&lt;/p&gt;
+&lt;h5 id=&#34;iis&#34;&gt;IIS：
+&lt;/h5&gt;&lt;p&gt;微软的；ASP&amp;hellip;.;Windows中自带的&lt;/p&gt;
+&lt;h5 id=&#34;tomcat&#34;&gt;Tomcat:
+&lt;/h5&gt;&lt;p&gt;免费的开源Web应用服务器，适合中小型系统和并发性不高的场合，是轻量化服务器。&lt;/p&gt;
+&lt;p&gt;Tomcat实际上运行JSP和Servlet。&lt;/p&gt;
+&lt;p&gt;tips：&lt;/p&gt;
+&lt;p&gt;一般软件学习路径:&lt;/p&gt;
+&lt;p&gt;​	1.安装 or 解压&lt;/p&gt;
+&lt;p&gt;​	2.了解配置文件以及目录结构&lt;/p&gt;
+&lt;p&gt;​	3.了解下载软件的作用&lt;/p&gt;
+&lt;h2 id=&#34;3tomcat&#34;&gt;3.Tomcat
+&lt;/h2&gt;&lt;h4 id=&#34;网站访问流程-&#34;&gt;网站访问流程 ：
+&lt;/h4&gt;&lt;p&gt;​	1.先查本机内存中的DNS缓存，命中则访问，否则进行步骤2&lt;/p&gt;
+&lt;p&gt;​	2.访问路径为C:\Windows\System32\drivers\etc\hosts的本地文件，命中则访问&lt;/p&gt;
+&lt;p&gt;​	并将该地址写入DNS缓存中，否则进行步骤3&lt;/p&gt;
+&lt;p&gt;​	3.访问外地的DNS服务器，找到则根据域名获取资源加载网页，找不到返回失败&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ckz282.github.io/p/javaweb/assets/javaweb1-3.jpg&#34;
+	width=&#34;576&#34;
+	height=&#34;331&#34;
+	srcset=&#34;https://ckz282.github.io/p/javaweb/assets/javaweb1-3_hu11659237641137004884.jpg 480w, https://ckz282.github.io/p/javaweb/assets/javaweb1-3_hu6703916166917302113.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;javaweb1-3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;417px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;​                                                                                                          （文件javaweb1.3）&lt;/p&gt;
+&lt;h4 id=&#34;发布一个网站古早传统流程&#34;&gt;发布一个网站：（古早传统流程）
+&lt;/h4&gt;&lt;p&gt;​	将写好的网站放入WEB应用服务器（这里指Tomcat）里的webapps文件夹下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;--webapps :Tomcat服务器的应用目录
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	-ROOT
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	-xxxxx            //网站的目录名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		-WEB-INF
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			-classes:java   //程序
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			-libs:web   //应用所依赖的jar包
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			-web.xml   //网站配置文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		-index.html   //默认的首页
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		-static     //静态资源文件，包括css样式
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			-css
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			-js
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;			-img
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		-......
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;————————————————————————————————————————————————————————————&lt;/p&gt;
+&lt;h2 id=&#34;4请求行&#34;&gt;4.请求行
+&lt;/h2&gt;&lt;p&gt;-请求行中的请求方式:GET&lt;/p&gt;
+&lt;p&gt;-请求方式:Get,Post,Delete,Put&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;​	get:请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效&lt;/p&gt;
+&lt;p&gt;​	post:请求能够携带的参数没有限制，大小没有限制，不会在浏览器的地址栏显示数据内容，安全，但不高效&lt;/p&gt;
+&lt;p&gt;响应状态码：&lt;/p&gt;
+&lt;p&gt;​	200：请求响应成功&lt;/p&gt;
+&lt;p&gt;​	3xx：请求重定向（重新定位到新的网页）&lt;/p&gt;
+&lt;p&gt;​	4xx：找不到资源 404&lt;/p&gt;
+&lt;p&gt;​	5xx：服务器代码错误 500        502（网关错误）&lt;/p&gt;
 </description>
         </item>
         <item>
